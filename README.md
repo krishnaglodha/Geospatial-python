@@ -58,7 +58,7 @@ this will dowload executable file (windows/mac)
 
 
 #### 3. Install Environment (Conda)
-Head over to Anaconda official download page https://www.anaconda.com/products/individua and install it. 
+Head over to Anaconda official download page https://www.anaconda.com/products/individual and install it. 
 
 Once, installation is done, if you are on mac/linux, you will see `(base)` written in your terminal , if you are on windows, go to search bar and look for conda terminal
 
