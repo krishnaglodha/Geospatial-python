@@ -39,11 +39,11 @@ Check if python is installed,
 
 open <b>terminal/commad-prompt</b> and type `python` if you see anything like
 
-<img src='../data/screenshots/pythonInstalled.png' height="400">
+<img src='data/screenshots/pythonInstalled.png' height="400">
 
 type `python3` if you see anything like
 
-<img src='../data/screenshots/python3Ins.png' height="400">
+<img src='data/screenshots/python3Ins.png' height="400">
 
 If you got error bit times, go to python official site and click on download https://www.python.org/downloads/
 
@@ -82,14 +82,14 @@ Now we can install package `pip install notebook`, everytime we want to install 
 
 After package in installed, simply start the notebook by typing `jupyter notebook`
 
-<img src='../data/screenshots/notebook.png'  height="400">
+<img src='data/screenshots/notebook.png'  height="400">
 
 
 
 #### 7. Creating notebook
 
 head over to http://localhost:8888/tree where you can then click on <b>new </b> to ceate new Python3 notebook
-<img src='../data/screenshots/note.png'  height="400">
+<img src='data/screenshots/note.png'  height="400">
 Here you can start writing code in python, in the first line write
 
 ```
@@ -97,7 +97,7 @@ Here you can start writing code in python, in the first line write
 ```
 and hit Run Key to see following result
 
-<img src='../data/screenshots/hello.png'  height="400">
+<img src='data/screenshots/hello.png'  height="400">
 
 
 ---------------------------------------------------------------------------------------------------------------------
