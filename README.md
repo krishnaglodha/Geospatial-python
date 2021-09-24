@@ -5,6 +5,9 @@
 
 Krishna Lodha (https://krishnaglodha.com/)
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/krishnaglodha/foss4g-geospatial/HEAD)
+
+
 ### 👤 Who should tune in for this workshop
 - Python enthusiast
 - GIS Analysts
