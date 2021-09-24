@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>pydeck</title>
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <script src='https://cdn.jsdelivr.net/npm/@deck.gl/jupyter-widget@~8.5.*/dist/index.js'></script>
+    <style>
+    body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#deck-map-container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#map {
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#deckgl-overlay {
+  z-index: 2;
+  background: none;
+}
+
+#deck-map-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#deck-container {
+  width: 100vw;
+  height: 100vh;
+}
+    </style>
+  </head>
+  <body>
+    <div id="deck-container">
+    </div>
+  </body>
+  <script>
+    const jsonInput = {"initialViewState": {"latitude": 21.214885, "longitude": 77.950061, "pitch": 50, "zoom": 3}, "layers": [{"@@type": "ArcLayer", "autoHighlight": true, "data": [{"flights": 12, "lat_from": 19.004737, "lat_to": 30.721946, "lon_from": 72.855149, "lon_to": 76.786333}, {"flights": 24, "lat_from": 30.721946, "lat_to": 26.320806, "lon_from": 76.786333, "lon_to": 72.991998}, {"flights": 58, "lat_from": 19.004737, "lat_to": 26.320806, "lon_from": 72.855149, "lon_to": 72.991998}, {"flights": 98, "lat_from": 28.621777, "lat_to": 25.467454, "lon_from": 77.179575, "lon_to": 81.81917}, {"flights": 32, "lat_from": 25.467454, "lat_to": 28.621777, "lon_from": 81.81917, "lon_to": 77.179575}, {"flights": 21, "lat_from": 19.004737, "lat_to": 25.467454, "lon_from": 72.855149, "lon_to": 81.81917}, {"flights": 54, "lat_from": 26.320806, "lat_to": 28.621777, "lon_from": 72.991998, "lon_to": 77.179575}, {"flights": 65, "lat_from": 19.004737, "lat_to": 26.320806, "lon_from": 72.855149, "lon_to": 72.991998}, {"flights": 24, "lat_from": 26.320806, "lat_to": 19.004737, "lon_from": 72.991998, "lon_to": 72.855149}, {"flights": 78, "lat_from": 25.467454, "lat_to": 4.188647, "lon_from": 81.81917, "lon_to": 73.492082}, {"flights": 42, "lat_from": 19.004737, "lat_to": 4.188647, "lon_from": 72.855149, "lon_to": 73.492082}, {"flights": 12, "lat_from": 28.621777, "lat_to": 4.188647, "lon_from": 77.179575, "lon_to": 73.492082}, {"flights": 45, "lat_from": 26.320806, "lat_to": 8.058617, "lon_from": 72.991998, "lon_to": 77.551118}, {"flights": 36, "lat_from": 8.058617, "lat_to": 25.467454, "lon_from": 77.551118, "lon_to": 81.81917}, {"flights": 35, "lat_from": 8.058617, "lat_to": 28.621777, "lon_from": 77.551118, "lon_to": 77.179575}], "getSourceColor": [255, 165, 0, 80], "getSourcePosition": "@@=[lon_from, lat_from]", "getTargetColor": [128, 0, 128, 80], "getTargetPosition": "@@=[lon_to, lat_to]", "getTilt": 15, "getWidth": 5, "id": "348fe070-bae8-4dda-97a9-fa5d3b9da1af", "pickable": true}], "mapProvider": "carto", "mapStyle": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json", "views": [{"@@type": "MapView", "controller": true}]};
+    const tooltip = {'html': '{flights} flights taken <br /> on this root'};
+    const customLibraries = null;
+
+    const deckInstance = createDeck({
+                  container: document.getElementById('deck-container'),
+      jsonInput,
+      tooltip,
+      customLibraries
+    });
+
+  </script>
+</html>
