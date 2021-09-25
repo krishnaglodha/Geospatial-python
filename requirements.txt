@@ -15,7 +15,6 @@ decorator==5.0.9
 defusedxml==0.7.1
 entrypoints==0.3
 Fiona==1.8.20
-GDAL==3.3.1
 GeoAlchemy==0.7.2
 GeoAlchemy2==0.9.4
 geojson==2.5.0
