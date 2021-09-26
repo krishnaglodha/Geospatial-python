@@ -11,6 +11,7 @@ Krishna Lodha (https://krishnaglodha.com/)
 - Python enthusiast
 - GIS Analysts
 - GIS Developers 
+- Researchers 
 
 
 ### 📖 What will you learn
@@ -20,6 +21,7 @@ Krishna Lodha (https://krishnaglodha.com/)
 - Raster Analysis with Python
 - Vector data visualization
 - Interactive Mapping in Python
+- GDAL and OGR command line tools
 
 ### 📦 Prerequisite 
 - Basic GIS knowledge
@@ -49,7 +51,8 @@ type `python3` if you see anything like
 
 If you got error bit times, go to python official site and click on download https://www.python.org/downloads/
 
-this will dowload executable file (windows/mac) 
+this will dowload executable file (windows/mac) ,if you are on linux simply do 
+> sudo apt-get install python3.8
 
 
 #### 2. Understand the logic of python development

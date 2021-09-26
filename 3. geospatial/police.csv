@@ -1,0 +1,6 @@
+,geometry,id,criminals
+0,POINT (1 1),1,12
+1,POINT (2 2),2,34
+2,POINT (2 1),3,112
+3,POINT (1 2),4,41
+4,POINT (1.5 2),5,212
